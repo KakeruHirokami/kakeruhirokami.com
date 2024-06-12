@@ -25,35 +25,35 @@ theme = 'hugo-PaperMod'
   apple_touch_icon = "favicon.ico"
   safari_pinned_tab = "favicon.ico"
 
-[params.label]
-  text = "Home"
-  iconHeight = 35
-
-[params.profileMode]
-  enabled = true
-  title = "I'm KakeruHirokami"
-  subtitle = "a.k.a. yamo, a engineer."
-  imageUrl = "profile.png"
-  imageWidth = 200
-  imageHeight = 200
-  imageTitle = "yamoyamo"
-
-[[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com/yamoyamox"
-
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/kakeruhirokami"
-
-[[params.socialIcons]]
-name = "instagram"
-url = "https://www.instagram.com/yamoyamox/"
-
-[params.cover]
-hidden = true # hide everywhere but not in structured data
-hiddenInList = true # hide on list pages and home
-hiddenInSingle = true # hide on single page
+#[params.label]
+#  text = "Profile"
+#  iconHeight = 35
+#
+#[params.profileMode]
+#  enabled = true
+#  title = "I'm KakeruHirokami"
+#  subtitle = "a.k.a. yamo, a engineer."
+#  imageUrl = "profile.png"
+#  imageWidth = 200
+#  imageHeight = 200
+#  imageTitle = "yamoyamo"
+#  
+#  [[params.socialIcons]]
+#  name = "twitter"
+#  url = "https://twitter.com/yamoyamox"
+#  
+#  [[params.socialIcons]]
+#  name = "github"
+#  url = "https://github.com/kakeruhirokami"
+#  
+#  [[params.socialIcons]]
+#  name = "instagram"
+#  url = "https://www.instagram.com/yamoyamox/"
+# 
+# [params.cover]
+# hidden = true # hide everywhere but not in structured data
+# hiddenInList = true # hide on list pages and home
+# hiddenInSingle = true # hide on single page
 
 # for search
 # https://fusejs.io/api/options.html
@@ -72,15 +72,3 @@ keys = ["title", "permalink", "summary", "content"]
   name = "article"
   url = "article"
   weight = 5
-
-  [[menu.main]]
-  identifier = "profile"
-  name = "profile"
-  url = "fixed/profile"
-  weight = 10
-
-  [[menu.main]]
-  identifier = "tags"
-  name = "tags"
-  url = "tags/"
-  weight = 25
