@@ -8,3 +8,79 @@ theme = 'hugo-PaperMod'
 
 [params]
   author = 'KakeruHirokami'
+  title = 'kakeruhirokami.com'
+  description = 'Blog of KakeruHirokami, a engineer.'
+  keywords = ['Blog', 'KakeruHirokami', 'sre', 'kubernetes']
+  images = ['/images/profile.png']
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[params.assets]
+  favicon = "favicon.ico"
+  favicon16x16 = "favicon16x16.ico"
+  favicon32x32 = "favicon32x32.ico"
+  apple_touch_icon = "favicon.ico"
+  safari_pinned_tab = "favicon.ico"
+
+[params.label]
+  text = "Home"
+  iconHeight = 35
+
+[params.profileMode]
+  enabled = true
+  title = "I'm KakeruHirokami"
+  subtitle = "a.k.a. yamo, a engineer."
+  imageUrl = "profile.png"
+  imageWidth = 200
+  imageHeight = 200
+  imageTitle = "yamoyamo"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/yamoyamox"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/kakeruhirokami"
+
+[[params.socialIcons]]
+name = "instagram"
+url = "https://www.instagram.com/yamoyamox/"
+
+[params.cover]
+hidden = true # hide everywhere but not in structured data
+hiddenInList = true # hide on list pages and home
+hiddenInSingle = true # hide on single page
+
+# for search
+# https://fusejs.io/api/options.html
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+[menu]
+  [[menu.main]]
+  identifier = "article"
+  name = "article"
+  url = "article"
+  weight = 5
+
+  [[menu.main]]
+  identifier = "profile"
+  name = "profile"
+  url = "fixed/profile"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "tags"
+  name = "tags"
+  url = "tags/"
+  weight = 25
