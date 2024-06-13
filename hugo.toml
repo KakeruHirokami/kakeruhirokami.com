@@ -57,18 +57,18 @@ theme = 'hugo-PaperMod'
 
 # for search
 # https://fusejs.io/api/options.html
-[params.fuseOpts]
-isCaseSensitive = false
-shouldSort = true
-location = 0
-distance = 1000
-threshold = 0.4
-minMatchCharLength = 0
-keys = ["title", "permalink", "summary", "content"]
+# [params.fuseOpts]
+# isCaseSensitive = false
+# shouldSort = true
+# location = 0
+# distance = 1000
+# threshold = 0.4
+# minMatchCharLength = 0
+# keys = ["title", "permalink", "summary", "content"]
 
-[menu]
-  [[menu.main]]
-  identifier = "article"
-  name = "article"
-  url = "article"
-  weight = 5
+# [menu]
+#   [[menu.main]]
+#   identifier = "article"
+#   name = "article"
+#   url = "article"
+#   weight = 5
