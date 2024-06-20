@@ -15,6 +15,9 @@
     --code-block-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+    --alert: rgb(255, 213, 206);
+    --warn: rgb(255, 255, 279);
+    --info: rgb(220, 241, 255);
 }
 
 .dark {
@@ -27,6 +30,9 @@
     --code-block-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
+    --alert: rgb(86, 0, 0);
+    --warn: rgb(72, 69, 0);
+    --info: rgb(0, 21, 119);
 }
 
 .list {

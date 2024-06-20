@@ -1,0 +1,60 @@
+{{ $kind := .Get "kind" }}
+{{ $iconsize := .Get "iconsize" }}
+{{ $iconname := "info-circle-fill"}}
+{{ $vendor := "bootstrap"}}
+{{ $calloutclass := "info" }}
+{{ if eq $kind "alert" }}
+  {{ $calloutclass = "alert" }}
+  {{ $iconname = "exclamation-circle-fill"}}
+  {{ $vendor = "bootstrap"}}
+{{ else if eq $kind "warn" }}
+  {{ $calloutclass = "warn" }}
+  {{ $iconname = "exclamation-triangle-fill"}}
+  {{ $vendor = "bootstrap"}}
+{{ else if eq $kind "info" }}  
+  {{ $calloutclass = "info" }}
+  {{ $iconname = "info-circle-fill"}}
+  {{ $vendor = "bootstrap"}}
+{{ end }}
+
+<style>
+  .info {
+    background-color: var(--info);
+  }
+  .warn {
+    background-color: var(--warn);
+  }
+  .alert {
+    background-color: var(--alert);
+  }
+
+  #callout {
+    padding: 1.5em 1.25em;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  #callout-inner {
+    margin-left: 1em;
+  }
+  @media (max-width: 767px) {
+    #callout {
+    padding: 1.5em 0.75em 1.5em 0.6em;
+    }
+    #callout-inner {
+      margin-left: 0.5em;
+    }
+  }
+</style>
+{{ $ctx := dict
+  "vendor" $vendor
+  "name" $iconname
+  "size" $iconsize
+}}
+<div id="callout" class="{{ $calloutclass }}">
+  {{ partial "icons/icon" $ctx }}
+	<div id="callout-inner">
+    {{ .Get "text" }}
+  </div>
+</div>
