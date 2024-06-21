@@ -2,4 +2,4 @@
 description: "KakeruHirokam.com"
 ---
 
-技術的なことに関しての、日々の備忘録
+技術的なことに関する日々の備忘録
